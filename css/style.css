@@ -1,0 +1,169 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300italic);
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background:#9C27B0;
+}
+
+#cake {
+  display: block;
+  position: relative;
+  margin: -16em auto -124px auto;
+}
+
+/* ============================================== Candle
+*/
+.velas {
+  background: #ffffff;
+  border-radius: 10px;
+  position: absolute;
+  top: 128px;
+  left: 50%;
+  margin-left: -2.5px;
+  margin-top: -8.33333333px;
+  width: 5px;
+  height: 35px;
+  -webkit-transform: translateY(-300px);
+  -ms-transform: translateY(-300px);
+  transform: translateY(-300px);
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation: in 500ms 6s ease-out forwards;
+  animation: in 500ms 6s ease-out forwards;
+}
+
+.velas:after,
+.velas:before {
+  background: rgba(255, 0, 0, 0.4);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.22222222px;
+}
+
+.velas:after {
+  top: 25%;
+  left: 0;
+}
+
+.velas:before {
+  top: 45%;
+  left: 0;
+}
+
+/* ============================================== Fire
+*/
+.fuego {
+  border-radius: 100%;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -2.2px;
+  width: 6.66666667px;
+  height: 18px;
+}
+
+.fuego:nth-child(1) {
+  -webkit-animation: fuego 2s 6.5s infinite;
+  animation: fuego 2s 6.5s infinite;
+}
+
+.fuego:nth-child(2) {
+  -webkit-animation: fuego 1.5s 6.5s infinite;
+  animation: fuego 1.5s 6.5s infinite;
+}
+
+.fuego:nth-child(3) {
+  -webkit-animation: fuego 1s 6.5s infinite;
+  animation: fuego 1s 6.5s infinite;
+}
+
+.fuego:nth-child(4) {
+  -webkit-animation: fuego 0.5s 6.5s infinite;
+  animation: fuego 0.5s 6.5s infinite;
+}
+
+.fuego:nth-child(5) {
+  -webkit-animation: fuego 0.2s 6.5s infinite;
+  animation: fuego 0.2s 6.5s infinite;
+}
+
+/* ============================================== Animation Fire
+*/
+@-webkit-keyframes fuego {
+  0%, 100% {
+    background: rgba(254, 248, 97, 0.5);
+    -webkit-box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+    box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+    -webkit-transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    background: rgba(255, 50, 0, 0.1);
+    -webkit-box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+    box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+    -webkit-transform: translateY(-20px) scale(0);
+    transform: translateY(-20px) scale(0);
+  }
+}
+@keyframes fuego {
+  0%, 100% {
+    background: rgba(254, 248, 97, 0.5);
+    -webkit-box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+    box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+    -webkit-transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    background: rgba(255, 50, 0, 0.1);
+    -webkit-box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+    box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+    -webkit-transform: translateY(-20px) scale(0);
+    transform: translateY(-20px) scale(0);
+  }
+}
+@-webkit-keyframes in {
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes in {
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.text {
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.6em;
+    margin: 200px auto;
+    font-family: "微软雅黑";
+    text-transform: uppercase;
+   color:white;
+    font-size: 1.6em;
+    text-shadow: 0 0 10px #f90303, 0 0 20px #f9a308, 0 0 30px #fff, 0 0 40px #fb3406, 0 0 70px rgb(255, 247, 0), 0 0 80px rgba(243, 37, 4, 0.86), 0 0 100px #ec4e03, 0 0 150px rgba(241, 129, 33, 0.6);
+  
+}
+.t1{
+  text-align: right;
+  margin: -100px 10px 0 0; 
+  color: #05e2f9;
+  font-family: 'Lato', sans-serif;
+  font-weight: 1em;
+  font-style: italic;
+
+}
+.text>h1{
+  font-weight: 300px;
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+}
